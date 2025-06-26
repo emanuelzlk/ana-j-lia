@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title> Para Ana Júlia </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f5bde2, #4d0635);
+      text-align: center;
+      padding: 50px 20px;
+      color: #99004d;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 60px;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .counter {
+      font-size: 24px;
+      color: #d63384;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 30px auto;
+    }
+
+    .message {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 1.2em;
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #ffb6c1;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ff99cc;
+      margin: 20px;
+    }
+
+    .spotify {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Eu Te Amo Minha Princesa! 💖</h1>
+  <div class="heart">💗</div>
+
+  <div class="counter">
+    Estamos juntos há <span id="daysTogether">...</span> dias! 💑
+  </div>
+
+  <h2> Ana Júlia + Emanuel 📸</h2>
+  <div class="gallery">
+    <img src="https://i.postimg.cc/15C9KCmB/8b600745-31eb-451c-af2d-98c1e1615c92.jpg" alt="Foto 3">
+  </div>
+
+  <div class="message">
+    Eu te amo minha gatinha.
+Mesmo quando você me maltrata , meu amor por você só cresce.
+Quando eu te vejo, me sinto como uma criança feliz.
+Nunca senti algo assim por ninguém.
+Desde que te conheci, sou completamente apaixonado por você.
+E é com você que eu quero viver o meu futuro. <br>
+    Desde o dia 21 de março de 2025, minha vida ficou mais completa. <br><br>
+    Obrigado por existir. Eu te amo com todo meu coração! 💞
+  </div>
+
+  <!-- Player do Spotify -->
+  <div class="spotify">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/70wHJTH7M64u5NBrdKBKFl
+" 
+    width="300" height="80" frameborder="0" allowtransparency="true" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+
+  <div class="footer">
+    Feito com amor 💌 por Emanuel
+  </div>
+
+  <script>
+    // Data do início do relacionamento: 21 de março de 2025
+    const startDate = new Date(2025, 2, 21); // março = mês 2
+    const today = new Date();
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("daysTogether").textContent = diffDays;
+  </script>
+
+</body>
+</html>
